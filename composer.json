@@ -1,0 +1,26 @@
+{
+    "name": "bibrokhim/laravel-language-header",
+    "description": "Set application locale from request header and return response with correct header",
+    "type": "laravel-package",
+    "license": "MIt",
+    "autoload": {
+        "psr-4": {
+            "Bibrokhim\\LaravelLanguageHeader\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bibrokhim\\LaravelLanguageHeader\\LanguageHeaderServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "Bakhromjon",
+            "email": "bahromjon.ibrohimov@yandex.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
