@@ -1,0 +1,1 @@
+# laravel-language-header
