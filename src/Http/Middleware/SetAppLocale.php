@@ -16,6 +16,11 @@ class SetAppLocale
     public function handle(Request $request, Closure $next): Response
     {
         $locale = request()->header('Accept-Language', app()->getLocale());
+
+        if ($locale === 'en-us,en;q=0.5') {
+            $locale = 'en';
+        }
+
         app()->setLocale($locale);
 
         return $next($request);
